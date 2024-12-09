@@ -302,10 +302,10 @@ input::placeholder {
 .hebergements .populaires-cards {
     display: flex; /* Active Flexbox */
     flex-wrap: wrap; /* Permet aux cartes de passer à la ligne */
-    gap: 20px; /* Espace constant entre les cartes */
     justify-content: space-between; /* Répartit les cartes de manière uniforme */
-    align-items: stretch; /* Force toutes les cartes à avoir la même hauteur */
-    margin-top: 20px; /* Espacement au-dessus */
+    gap: 20px; /* Espace constant entre les cartes */
+    /*align-items: stretch; /* Force toutes les cartes à avoir la même hauteur */
+    /*margin-top: 20px; /* Espacement au-dessus */
 }
 
 /* Cartes individuelles */
@@ -314,7 +314,7 @@ input::placeholder {
     background-color: white; /* Fond blanc */
     border-radius: 10px; /* Coins arrondis */
     padding: 10px; /* Espacement interne */
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1); /* Effet d'ombre */
+    /* box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1); /* Effet d'ombre */
     display: flex;
     flex-direction: column; /* Organisation verticale des contenus */
     align-items: flex-start; /* Aligne le texte à gauche */
@@ -444,8 +444,44 @@ input::placeholder {
     padding: 10px;
     color: black; /* Couleur du texte */
 }
+/****** Section Footer *******/
+.footer {
+    display: flex;
+    justify-content: space-between; /* Répartit les colonnes avec un espace égal */
+    align-items: flex-start; /* Aligne les colonnes en haut */
+    background-color: var(--main-bg-color); /* Fond gris clair */
+    padding: 20px; /* Espacement interne */
+    border-radius: 0; /* Coins non arrondis */
+    margin-top: 20px; /* Espacement avec le contenu précédent */
+}
 
+.footer-column {
+    width: 30%; /* Chaque colonne occupe 30% de la largeur */
+    text-align: left;
+}
 
+.footer-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px; /* Espacement entre le titre et la liste */
+}
+
+.footer-column ul {
+    list-style: none; /* Supprime les puces */
+    padding: 0; /* Supprime le padding par défaut */
+    margin: 0; /* Supprime les marges par défaut */
+}
+
+.footer-column li {
+    margin-bottom: 10px; /* Espacement entre les éléments de la liste */
+}
+
+.footer-column a {
+    text-decoration: none; /* Supprime le soulignement */
+    font-size: 14px;
+    color: black; 
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -463,6 +499,7 @@ input::placeholder {
         width: 100%;
         margin-top: 50px;
     }
+
 
     .populaires-cards {
         display: flex;
