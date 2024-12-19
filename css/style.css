@@ -101,7 +101,7 @@ header {
 .navigation a {
     text-decoration: none; /* Pas de soulignement */
     font-size: 16px;
-    font-weight: 500;
+   /* font-weight: bold;*/
     color: black; /* Couleur noire */
     position: relative; /* Nécessaire pour le pseudo-élément */
     padding-top: 5px; /* Espace pour la bordure au-dessus */
@@ -588,7 +588,7 @@ input::placeholder {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
-    
+
     .activities .card {
         width: 100%;
         height: 270px;
@@ -605,5 +605,230 @@ input::placeholder {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+    .header {
+        display: flex;
+        flex-direction: column; /* Organise en colonne */
+        text-align: center; /* Centre le texte */
+        gap: 10px; /* Espace entre les éléments */
+    }
+
+    .header-container {
+        flex-direction: column; /* Centre le logo */
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .logo img {
+        width: 100px; /* Réduction de la taille du logo */
+        margin: 0 auto;
+    }
+
+    .navigation ul {
+        flex-direction: row; /* Liens en ligne */
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .navigation a::before {
+        bottom: -2px; /* Ajustement de la ligne bleue */
+    }
 }
+.section-title {
+    font-size: 20px;
+}
+
+p {
+    font-size: 14px;
+}
+/****** Hebergements And Populaires ***********/
+
+.hebergements-and-populaires section {
+    background-color: var(--main-bg-color);
+    padding: 20px;
+    gap: 15px;
+    width: 375px;
+    height: fit-content;
+}
+
+.hebergements-and-populaires .hebergements {
+    background-color: white;
+    border-radius: 0;
+    padding: 20px;
+    gap: 15px;
+    width: 375px;
+    height: fit-content;
+    /*box-sizing: border-box;*/
+
+}
+.hebergements-and-populaires {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.populaires-cards {
+    display: flex;
+   /* flex-direction: row;*/
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.populaires-cards a {
+    width: 100%;
+}
+.hebergements-title .section-title {
+    display: flex; /* Aligne le titre et les filtres sur une ligne */
+    justify-content: flex-start;
+   /* align-items: center; /* Centre verticalement le titre et les filtres */
+    width: 35px;
+    height: 26px;
+    font-size: 20px; /* Taille du titre */
+    white-space: nowrap; /* Empêche le titre de passer à la ligne */
+    margin: 0;
+    
+}
+.hebergements-cards a {
+    width: 100%;
+}
+
+.afficher-plus {
+    margin-bottom: 0; /* Réduit l'espace en dessous du texte "Afficher plus" */
+}
+
+.activities {
+    margin-top: 5px; /* Réduit l'espace au-dessus de la section Activités */
+}
+.activities .section-title {
+    display: flex; /* Aligne le titre et les filtres sur une ligne */
+    justify-content: flex-start;
+   /* align-items: center; /* Centre verticalement le titre et les filtres */
+    width: 35px;
+    height: 26px;
+    font-size: 20px; /* Taille du titre */
+    white-space: nowrap; /* Empêche le titre de passer à la ligne */
+    margin-top: 0;
+    padding-top: 0;
+}
+.activities-grid a {
+    width: 100%;
+}
+
+.activities .activities-grid {
+    display: flex;
+   /* flex-direction: row;*/
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 30px;
+    width: 375px;
+    height: fit-content;
+}
+
+/****** Section Footer *******/
+.footer {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center; /* Répartit les colonnes avec un espace égal */
+    /*align-items: center; /* Aligne les colonnes en haut */
+    /*background-color: var(--main-bg-color); /* Fond gris clair */
+    padding: 30px; /* Espacement interne */
+    gap: 30px;
+   /* border-radius: 0; /* Coins non arrondis */
+   /* margin-top: 20px; /* Espacement avec le contenu précédent */
+}
+
+.footer-column {
+   width: 100%; /* Chaque colonne occupe 30% de la largeur */
+   /* text-align: left;*/
+   /* margin-top: 10px;*/
+   margin: 0;
+   gap: 10px;
+
+}
+
+/*.footer-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+   /* margin-bottom: 10px; /* Espacement entre le titre et la liste */
+   /* gap: 15px;*/
+/*}*/
+
+/*.footer-column ul {
+    list-style: none; /* Supprime les puces */
+  /*  padding: 0; /* Supprime le padding par défaut */
+  /*  margin: 0; /* Supprime les marges par défaut */
+/*}
+
+.footer-column li {
+    margin-bottom: 10px; /* Espacement entre les éléments de la liste */
+/*}*/
+
+/*.footer-column a {
+    text-decoration: none; /* Supprime le soulignement */
+   /* font-size: 14px;
+    color: black; 
+}*/
+
+
+    /* Ajout Header */
+
+    /*header {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centre tout horizontalement */
+       /* text-align: center;
+       /* margin-bottom: 20px;*/
+       /* width: 121px;
+        height: 79px;*/
+       /* margin: 10px;
+        /*padding: 30px;*/
+      /* gap: 10px;  /* Espacement entre le logo et les liens */
+   /* }*/
+    /*.logo {
+        margin: 0 auto; /* Centre horizontalement */
+        /*margin-bottom: 10px; /* Espacement entre le logo et les liens */
+  /*  }*/
+   /* .logo img {
+        /*display: flex;
+        flex-direction: column;
+        align-items: center; /* Centre tout horizontalement */
+        /*text-align: center;*/
+      /* width: 121px;
+        /*height: 79px;*/
+     /*   height: auto;
+       /* padding: 30px;*/
+       /* gap: 10px;  /* Espacement entre le logo et les liens **/
+       /* margin-bottom: 10px;*/
+  /*  }
+    .navigation {
+        display: flex;
+        justify-content: center;
+        gap: 20px; /* Espace entre les liens */
+       /* margin-top: 5px; /* Espacement au-dessus des liens */
+  /*  }*/
+
+   /* .navigation a {
+        position: relative;
+        text-decoration: none;
+        color: black;
+        font-size: 16px; /* Taille des liens */
+  /*  }
+
+        /* Ligne bleue uniquement en bas au survol */
+      /*  .navigation a::before {
+            content: '';
+            position: absolute;
+            bottom: -2px; /* Ajuste pour placer la ligne sous le texte */
+         /*   left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: blue;
+            transform: scaleX(0); /* Invisible par défaut */
+          /*  transition: transform 0.3s ease;
+        }
+    
+        .navigation a:hover::before {
+            transform: scaleX(1); /* Affiche la ligne bleue */
+       /* }*/
+   /* }*/
