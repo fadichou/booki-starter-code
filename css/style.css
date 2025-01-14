@@ -767,8 +767,7 @@ p.filters-description {
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     padding: 35px;
-    margin:0;
-   /* gap: 5px;*/
+    margin: 0;
     width: 113%;
     height: fit-content;
     border-radius: 0;
